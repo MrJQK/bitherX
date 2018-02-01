@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId "android.bither.com.mybither"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["constraint-layout"]
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation rootProject.ext.dependencies["protobuf"]
+    implementation rootProject.ext.dependencies["nineoldandroids"]
+    implementation rootProject.ext.dependencies["zxing"]
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation(rootProject.ext.dependencies["tony19-logback"]) {
+        // Work around for gradle 0.9 and 0.10
+        transitive = true
+    }
+
+//    compile project(':bitherj')
+    compile project(':wheel')
+    compile project(':android-charts')
+
+    implementation rootProject.ext.dependencies["slf4j"]
+    implementation rootProject.ext.dependencies["guava"]
+
+    implementation rootProject.ext.dependencies["findbugs"]
+    implementation rootProject.ext.dependencies["scrypt"]
+    implementation rootProject.ext.dependencies["spongycastle"]
+    implementation rootProject.ext.dependencies["guava"]
+    implementation rootProject.ext.dependencies["slf4j"]
+
+    implementation rootProject.ext.dependencies["httpclient"]
+    implementation rootProject.ext.dependencies["httpmime"]
+    implementation rootProject.ext.dependencies["httpcore"]
+    implementation rootProject.ext.dependencies["apache-mime4j-core"]
+
+}

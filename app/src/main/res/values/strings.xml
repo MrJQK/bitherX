@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bither</string>
+    <string name="localization.language.code">en</string>
+    <string name="bitcoin_balance_label">BTC</string>
+    <string name="bitcoin_symbol">BTC</string>
+    <string name="market_trading_amount">Volume</string>
+    <string name="market_price_high">High</string>
+    <string name="market_price_low">Low</string>
+    <string name="market_price_open">Open</string>
+    <string name="market_price_close">Close</string>
+    <string name="market_name_huobi">HUOBI</string>
+    <string name="market_name_bitstamp">Bitstamp</string>
+    <string name="market_name_btce">BTC-E</string>
+    <string name="market_name_okcoin">OKCoin.CN</string>
+    <string name="market_name_chbtc">CHBTC</string>
+    <string name="market_name_btcchina">BTCChina</string>
+    <string name="market_name_796">796</string>
+    <string name="market_name_bitfinex">Bitfinex</string>
+    <string name="market_name_btctrade">BtcTrade</string>
+    <string name="market_name_coinbase">Coinbase</string>
+    <string name="activity_name_address_detail">Detail</string>
+    <string name="activity_name_address_sign_tx">Sign Transaction</string>
+    <string name="activity_name_qr_code">QR Code</string>
+    <string name="activity_name_generate_unsigned_tx">Balance:</string>
+    <string name="activity_name_add_cold_address">Generate New Private Keys</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Cancel</string>
+    <string name="operate">Set</string>
+    <string name="address_option_delete">Stop monitoring</string>
+    <string name="address_option_remonitor">Remonitor</string>
+    <string name="address_option_view_on_blockchain_info">View on Blockchain.info</string>
+    <string name="address_option_view_on_blockmeta">View on BlockMeta.com</string>
+    <string name="address_delete_confirmation">Sure to stop monitoring this address?</string>
+    <string name="address_remonitor_confirmation">Sure to remonitor this address?</string>
+    <string name="address_monitor_failed">Monitor failed</string>
+    <string name="address_monitor_failed_too_much_tx">Can not monitor address with too much TXs</string>
+    <string name="address_monitor_failed_multiple_address">Can not monitor special MultiSig address</string>
+    <string name="total_btc_prefix">Total:</string>
+    <string name="total_address_prefix">Private Key Count:</string>
+    <string name="total_hdm_keychain_prefix">HDM Cold:</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="address_group_watch_only">Cold Wallet Address</string>
+    <string name="address_group_private">Hot Wallet Address</string>
+    <string name="network_or_connection_error">Network failure.</string>
+    <string name="high_api_is_too_old">Service data is too old ,Please wait</string>
+    <string name="find_browser_error">You don\'t have a browser</string>
+
+    <!-- address detail -->
+    <string name="address_balance">Balance</string>
+    <string name="address_total_incoming">Received</string>
+    <string name="address_total_outgoing">Sent</string>
+    <string name="address_detail_balance_detail_transaction_count">Transaction</string>
+    <string name="address_total_transaction_count">tx:</string>
+    <string name="address_first_seen_time">Birth Time</string>
+    <string name="input_coinbase">Minning</string>
+    <string name="address_cannot_be_parsed">Unknown Address</string>
+    <string name="address_mine">Me</string>
+    <string name="copy_address">Copy</string>
+    <string name="qr_code">QR Code</string>
+    <string name="copy_address_success">Address copied</string>
+    <string name="copy_private_key_success">Private key copied</string>
+    <string name="confirmations_postfix">Confirmations</string>
+    <string name="confirmation_postfix">Confirmation</string>
+    <string name="unconfirmed">Unconfirmed</string>
+    <string name="address_detail_send">Send</string>
+    <string name="address_detail_unsigned_transaction">Unsigned TX</string>
+    <string name="address_detail_send_balance_zero">You have no coins to send</string>
+    <string name="address_detail_no_transactions">No transactions found for this address, it has probably not been used on the network yet.</string>
+    <string name="address_detail_monitor_failed">Cannot monitor address with large amount of transactions.</string>
+    <string name="address_detail_monitor_failed_tx_toomuch">Cannot monitor address with large amount of transactions.</string>
+    <string name="address_detail_monitor_failed_special_address">Cannot monitor address with special transactions.</string>
+    <string name="address_detail_cancel_monitor">Stop Monitoring</string>
+    <string name="address_detail_transaction_confidence_dialog_prefix">Confirmation:</string>
+    <string name="address_detail_stop_monitoring_progress_dialog">Stopping Monitoring…</string>
+    <string name="address_detail_cannot_stop_monitoring">You can only stop monitoring one address in a minute.</string>
+    <string name="address_detail_cannot_remonitor">You can only remonitor one address in a minute.</string>
+    <string name="address_detail_empty_address_list_notice">You can\'t empty address list.</string>
+    <string name="address_detail_private_key_qr_code">Private Key QR Code</string>
+    <string name="address_detail_private_key_qr_code_encrypted">Private Key QR Code (Encrypted)</string>
+    <string name="address_detail_private_key_qr_code_decrypted">Private Key QR Code (Decrypted)</string>
+    <string name="address_detail_private_Key_qr_code_bip38">BIP38 Private Key QR Code</string>
+    <string name="address_detail_private_key_qr_code_backup">Back Up Private Key</string>
+
+    <!-- add address -->
+    <string name="add_address_tab_watch_only">Monitor</string>
+    <string name="add_address_tab_private_key">Private</string>
+    <string name="add_address_coming_soon">Coming Soon…</string>
+    <string name="add_address_scan">Scan</string>
+    <string name="add_address_delete">Delete</string>
+    <string name="add_address_watch_only_hint">Bitcoin Address</string>
+    <string name="add_address_already_watched">This address is already monitored</string>
+    <string name="addresses_already_monitored">This Bither Cold is already monitored.</string>
+    <string name="add_address_generate_address_with_private_key">Generate</string>
+    <string name="add_address_generate_address_password_label">Enter password of wallet</string>
+    <string name="add_address_generate_address_password_lengh_note">Length: 6&#8211;43</string>
+    <string name="add_address_generate_address_password_set_label">Set password of wallet</string>
+    <string name="add_address_generate_address_password_hint">Password</string>
+    <string name="add_address_generate_address_password_confirm_hint">Confirm Password</string>
+    <string name="add_address_generate_address_password_not_same">Passwords not same</string>
+    <string name="password_checking">Checking password</string>
+    <string name="password_wrong">Wrong Password</string>
+    <string name="decrypt_failed">Decryption Failed</string>
+    <string name="wallet_loading">Loading wallets, Please try again later.</string>
+    <string name="add_address_watch_only_scanned_address_warning">Bither can only monitor Bither Cold monitor QR code,\nnot other addresses.</string>
+
+    <!-- send -->
+    <string name="send_progress_dialog_message">Sending</string>
+    <string name="send_success">Send success</string>
+    <string name="send_failed">Send failed</string>
+    <string name="send_failed_missing_btc">Send failed. Lack of %s BTC.</string>
+    <string name="send_failed_dust_out_put">Send failed. Sending coins this few will be ignored.</string>
+    <string name="send_failed_pendding">Send failed. %s BTC to be confirmed.\nPlease wait for another confirmation.</string>
+    <string name="send_failed_max_tx_size">Send failed. Transaction size is to large.\nPlease reduce amount.</string>
+    <string name="send_coins_fragment_sending_address_label">From</string>
+    <string name="send_coins_fragment_receiving_address_label">Pay to</string>
+    <string name="send_coins_fragment_amount_label">Amount to pay</string>
+    <string name="send_result_sent_to">will be sent to</string>
+    <string name="send_result_with_fee">with fee</string>
+    <string name="send_confirm_address">You will send to:</string>
+    <string name="send_confirm_amount">Amount:</string>
+    <string name="send_confirm_fee">Fee:</string>
+    <string name="send_confirm_low_priority_warn">You have outputs lower than 0.01BTC,\nand transaction fee is low.\n<b>Confirmation may be very slow</b>.</string>
+    <string name="unsigned_transaction_exit_waring">Give up signing?\nThis transaction will not get broadcasted.</string>
+
+    <!-- market -->
+    <string name="market_sell">Sell:</string>
+    <string name="market_buy">Buy:</string>
+    <string name="market_height">H:</string>
+    <string name="market_low">L:</string>
+    <string name="market_line_one_minute">1min</string>
+    <string name="market_line_five_minute">5mins</string>
+    <string name="market_line_one_hour">1hour</string>
+    <string name="market_line_one_day">1day</string>
+    <string name="market_detail_new_price">Price</string>
+    <string name="market_detail_sell_price">Sell</string>
+    <string name="market_detail_buy_price">Buy</string>
+    <string name="market_detail_high_price">High</string>
+    <string name="market_detail_low_price">Low</string>
+    <string name="market_detail_depth">Market Depth</string>
+    <string name="buy_order">Buy</string>
+    <string name="sell_order">Sell</string>
+    <string name="market_share_button">Share</string>
+    <string name="market_web_button_prefix">Visit</string>
+    <string name="market_share_failed">Share failed.</string>
+    <string name="kline">K-line</string>
+    <string name="ten_line">10 line: </string>
+    <string name="thirty_line">30 line: </string>
+    <string name="kline_high">High: </string>
+    <string name="kline_low">Low: </string>
+    <string name="kline_open">Open: </string>
+    <string name="kline_close">Close: </string>
+    <string name="kline_amount">Volume: </string>
+    <string name="market_price_alert_high_hint">Higher Than</string>
+    <string name="market_price_alert_low_hint">Lower Than</string>
+    <string name="market_price_alert_title">Price Alert</string>
+    <string name="market_price_alert_high_error">High end can\'t be lower than current price.</string>
+    <string name="market_price_alert_low_error">Low end can\'t be higher than current price.</string>
+    <string name="price_alert_higher_than">Price on %s is higher than </string>
+    <string name="price_alert_lower_than">Price on %s is lower than </string>
+
+    <!-- setting -->
+    <string name="setting_name_currency">Default Currency</string>
+    <string name="setting_name_market">Default Exchange</string>
+    <string name="setting_name_wifi">Network Setting</string>
+    <string name="setting_name_wifi_yes">Sync over wifi only</string>
+    <string name="setting_name_wifi_no">Sync always</string>
+    <string name="setting_name_transaction_fee">Default Transaction Fee</string>
+    <string name="setting_name_transaction_fee_normal">Normal</string>
+    <string name="setting_name_transaction_fee_higher">Higher</string>
+    <string name="setting_name_transaction_fee_high">High</string>
+    <string name="setting_name_transaction_fee_10x">10x</string>
+    <string name="setting_name_transaction_fee_20x">20x</string>
+    <string name="setting_name_transaction_fee_normal_note">fast confirmation</string>
+    <string name="setting_name_transaction_fee_low_note">slow confirmation</string>
+    <string name="setting_name_transaction_fee_high_note">high priority</string>
+    <string name="setting_api_config">Api Config</string>
+    <string name="setting_api_config_bither_net">Bither.net</string>
+    <string name="setting_api_config_blockchain">Blockchain.info</string>
+    <string name="setting_name_api_config_bither">Bither</string>
+    <string name="setting_name_api_config_blockchain">Blockchain</string>
+    <string name="donate_button">Donate</string>
+    <string name="donate_thanks">Thank you for donating.</string>
+    <string name="setting_name_transaction_fee_low_warn">Sure to set low transaction fee as default?\nThis may cause slow confirmation.</string>
+    <string name="backup_again">The last backup is within 1 hour. Sure to backup again?</string>
+    <string name="set_avatar">Set Avatar</string>
+    <string name="set_avatar_camera">From Camera</string>
+    <string name="set_avatar_gallery">From Gallery</string>
+    <string name="edit_password_button">Change Password</string>
+    <string name="export_log">Export Log</string>
+    <string name="export_address">Export Address</string>
+    <string name="export_log_prompt">Confirm to export logs to sdcard ?</string>
+    <string name="reload_tx">Reload Transactions data</string>
+    <string name="export_success">The log exported to :</string>
+    <string name="export_address_success">The addresses exported to :</string>
+    <string name="setting_name_import_private_key">Import Private Key</string>
+    <string name="setting_name_import_bip38_key">Import BIP38-private key</string>
+    <string name="import_private_key_qr_code">From Bither Private Key QR Code</string>
+    <string name="import_private_key_text">From Private Key Text</string>
+    <string name="import_hdm_cold_seed_qr_code">From HDM Cold Seed QR Code</string>
+    <string name="import_hdm_cold_seed_phrase">From HDM Cold Phrase</string>
+    <string name="import_hd_account_seed_qr_code">From HD Account Seed QR Code</string>
+    <string name="import_hd_account_seed_phrase">From HD Account Phrase</string>
+
+
+    <string name="import_bip38_key_qr_code">From BIP38-private key QR Code</string>
+    <string name="import_bip38_key_text">From BIP38-private key text</string>
+    <string name="enter_bip38_key_password">Enter password of BIP38-private key</string>
+    <string name="private_key_text">Private Key Text</string>
+    <string name="import_bip38_key_text_hint">Enter your BIP38-private key </string>
+    <string name="import_bip38_key_text_format_erro">Not match BIP38-private key format</string>
+    <string name="import_private_key_text_hint">Enter your private key text</string>
+    <string name="import_private_key_text_format_error">Not match private key format</string>
+    <string name="import_hdm_cold_seed_format_error">Not match HDM cod seed format</string>
+    <string name="import_hd_account_seed_format_error">Not match HD Account seed format</string>
+    <string name="can_not_import_hdm_cold_seed">Can not import HDM Cold Seed</string>
+    <string name="import_private_key_qr_code_scan_title">Scan Private Key QR Code</string>
+    <string name="import_hdm_cold_seed_qr_code_scan_title">Scan HDM Cold Seed QR Code</string>
+    <string name="import_bip38private_key_qr_code_scan_title">Scan BIP38-private key QR Code</string>
+    <string name="import_private_key_qr_code_password">Enter original password</string>
+    <string name="import_private_key_qr_code_success">Import success.</string>
+    <string name="import_private_key_qr_code_failed">Import failed.</string>
+    <string name="import_hd_account_failed_duplicated">Import failed. This account is already in Bither.</string>
+    <string name="import_private_key_qr_code_failed_monitored">Can\'t import Bither Cold private key.</string>
+    <string name="import_private_key_qr_code_failed_duplicate">This private key already exists.</string>
+    <string name="import_private_key_qr_code_importing">Importing…</string>
+    <string name="import_private_key_qr_code_failed_different_password">Password of the private key to import is different from ours. Import failed.</string>
+    <string name="import_private_key_failed_tx_too_mush">Cannot import private key with large amount of transactions. </string>
+    <string name="import_private_key_failed_special_address">Cannot import private key with special transactions. </string>
+    <string name="reload_tx_need_too_much_time">Reload Transactions data?\nNeed long time.\nConsume network data.\nRecommand trying only with wrong data.</string>
+    <string name="reload_tx_failed">Reload transactions data failed , Please retry again. </string>
+    <string name="reload_tx_success">Reload transactions data success </string>
+    <string name="tx_cannot_reloding">You can only reload transactions data in a hour..</string>
+    <string name="base_on_text">Based on </string>
+    <string name="synchronous_interval">Sync Interval</string>
+    <string name="synchronous_interval_fifteen_minute">15 Minutes</string>
+    <string name="synchronous_interval_normal">Normal</string>
+    <string name="synchronous_interval_one_hour">1 Hour</string>
+    <string name="synchronous_interval_only_open_app">Only when openning</string>
+    <!-- Input parser -->
+    <string name="input_parser_cannot_classify">Cannot classify input:\n%s</string>
+    <string name="input_parser_invalid_bitcoin_uri">Invalid Bitcoin URI:\n%s</string>
+    <string name="input_parser_invalid_address">Got invalid bitcoin address!\n(Mixing up Mainnet/Testnet?)</string>
+    <string name="input_parser_invalid_transaction">Invalid transaction:\n%s</string>
+
+    <!-- feed -->
+    <string name="feed_send_btc">Send:</string>
+    <string name="feed_received_btc">Received:</string>
+    <string name="freshnews_title">News</string>
+    <string name="btc_donate">Bitcoin Donate:</string>
+
+    <!-- mode -->
+    <string name="choose_mode_cold_desctription">Bither Cold : Offline &amp; Secure.</string>
+    <string name="choose_mode_warm_desctription">Bither Hot : Online &amp; Simple.</string>
+    <string name="choose_mode_warm_waiting">Loading…</string>
+    <string name="choose_mode_warm_retry">Retry</string>
+    <string name="choose_mode_warm_change_to_cold">Switch to Bither Cold</string>
+    <string name="choose_mode_cold_confirm">Once mode is set, it can\'t be changed.\nBither Cold need to be run on a offline phone.\nSet this phone as Bither Cold?</string>
+    <string name="choose_mode_warm_confirm">Once mode is set, it can\'t be changed.\nBither Hot is an online bitcoin wallet.\nSet this phone as Bither Hot?</string>
+
+    <!-- warning -->
+    <string name="cold_warning">Warning</string>
+    <string name="safe_your_wallet">Please turn off the network!</string>
+
+    <!-- cold wallet -->
+    <string name="check_now">Check Now</string>
+    <string name="check_network">Check Network</string>
+    <string name="check_address">Check Address</string>
+    <string name="cold_wallet_init_check_label">Please turn off network</string>
+    <string name="wifi_is_close">WIFI Off</string>
+    <string name="threeg_is_close">Cellular Data Off</string>
+    <string name="bluetooth_is_close">Bluetooth Off</string>
+    <string name="wifi_not_close">WIFI Not Off</string>
+    <string name="threeg_not_close">Cellular Data Not Off</string>
+    <string name="bluetooth_not_close">Bluetooth Not Off</string>
+    <string name="wifi_is_close_checking">Checking WIFI…</string>
+    <string name="threeg_is_close_checking">Checking Cellular Data…</string>
+    <string name="bluetooth_is_close_checking">Checking Bluetooth…</string>
+    <string name="check_address_private_key_title">Private key of %s</string>
+    <string name="check_address_password">Password is correct</string>
+    <string name="check_private_key_safe">Private keys are safe.</string>
+    <string name="check_private_key_danger">Private keys are in danger</string>
+    <string name="checking_private_key">Checking private keys</string>
+    <string name="check_private_key_button">Check Private Keys</string>
+    <string name="check_points">%</string>
+    <string name="private_key_is_empty">You don\'t have any private key, please add some</string>
+    <string name="next_page">Next page</string>
+    <string name="can_not_find_private_key">Can not find private key </string>
+    <string name="scan_watch_only_address_error">QR Code contains no bitcoin address</string>
+    <string name="sign_transaction">Sign Transaction</string>
+    <string name="scan_qr_transport_init_label">Scan QR code No.1 provided by Bither</string>
+    <string name="scan_qr_transport_page_label">Scan QR code No.%1$d, total %2$d</string>
+    <string name="signing_transaction">Signing Transaction</string>
+    <string name="signed_transaction_qr_code_title">Scan with Bither Hot to sign transaction.</string>
+    <string name="qr_code_page">Page %1$d, Total %2$d</string>
+    <string name="complete">Complete</string>
+    <string name="scan_unsigned_transaction_title">Scan QR Code on Bither Hot</string>
+    <string name="clone_to_button">Cold Wallet Clone QR Code</string>
+    <string name="clone_to_title">Scan by the clone destination to clone</string>
+    <string name="clone_from_button">Bither Cold Wallet Clone</string>
+    <string name="clone_from_title">Scan from the clone source</string>
+    <string name="clone_from_waiting">Cloning…</string>
+    <string name="clone_from_success">Clone success</string>
+    <string name="clone_from_failed">Clone failed</string>
+    <string name="clone_from_password">Enter source password</string>
+    <string name="qr_code_for_all_addresses">Watch Only QR Code</string>
+    <string name="qr_code_for_all_addresses_title">Scan with Bither Hot to watch Bither Cold</string>
+    <string name="no_sd_card_of_back_up">SD card failure, Can not backup</string>
+    <string name="backup_finish">Back Up Finish !</string>
+    <string name="no_sd_card">SD card failure</string>
+    <string name="last_time_of_back_up">The last backup: %s </string>
+    <string name="just_now">Just now</string>
+    <string name="private_key_count_limit">Reached private key count limit</string>
+    <string name="watch_only_address_count_limit">Reached watch only address count limit</string>
+    <string name="generate_address_count_label">How many private keys to generate?</string>
+    <string name="recover_from_backup_of_cold">Find previous back up of Bither Cold on SD card. Recover from it?</string>
+    <string name="first_add_private_key_check_suggest">Would you check your private keys now?</string>
+
+    <!-- warm wallet -->
+    <string name="prepare_tx">Init Transaction</string>
+    <string name="generate_unsigned_tx_button">Unsigned TX QR Code</string>
+    <string name="get_sign_hash">Get sign </string>
+    <string name="unsigned_transaction_qr_code_title">Scan with Bither Cold to sign transaction</string>
+    <string name="unsigned_transaction_qr_code_complete">Scan to sign</string>
+    <string name="unsigned_transaction_sign_failed">Sign failed</string>
+    <string name="scan_transaction_signature_title">Scan QR Code on Bither Cold</string>
+    <string name="prompt_block_height">Block Height : %d</string>
+    <string name="prompt_wallet_height">Wallet Height : %d</string>
+    <string name="scan_for_all_addresses_in_bither_cold">Monitor Bither Cold</string>
+    <string name="scan_for_all_addresses_in_bither_cold_title">Scan Qr Code to watch Bither Cold</string>
+    <string name="scan_for_all_addresses_in_bither_cold_success">Monitor Bither Cold Success</string>
+    <string name="scan_for_all_addresses_in_bither_cold_failed">Monitor Bither Cold Failed</string>
+    <string name="time_is_wrong">Current system time is wrong, please correct it.</string>
+    <string name="only_supports_the_compressed_private_key">Only supports the compressed format of private key</string>
+    <string name="old_version_no_support_change_adress">old version QR Code does not support change address selection</string>
+    <string name="scan_qr_code_from_photo_wrong">No QR Code Found</string>
+
+    <!-- select address to send -->
+    <string name="select_address_to_send">Select an address to send</string>
+    <string name="select_address_to_send_no_address_fount">You don\'t have any address with enough available bitcoin</string>
+
+    <!-- donate -->
+    <string name="select_address_to_donate">Select an address to donate</string>
+    <string name="donate_no_address">No bitcoins available for donation.</string>
+    <string name="donate_receiving_address_label">Donate to developers</string>
+    <string name="donate_sending_verb">Donate</string>
+    <string name="donate_unsigned_transaction_verb">Donate</string>
+
+    <!-- bitcoin wallet -->
+    <string name="network_monitor_activity_title">Network Monitor</string>
+    <string name="network_monitor_peer_list_title">Peers</string>
+    <string name="network_monitor_block_list_title">Blocks</string>
+    <string name="peer_list_row_ping_time">⇆ %d&#x2009;ms</string>
+    <string name="network_monitor_clear_peer">Clear Peers</string>
+
+    <!-- fancy qr code -->
+    <string name="fancy_qr_code_share">Share</string>
+    <string name="fancy_qr_code_save">Save</string>
+    <string name="fancy_qr_code_save_success">QR Code saved.</string>
+    <string name="fancy_qr_code_view_origin">View Original QR Code</string>
+    <string name="saving">Saving…</string>
+    <string name="fancy_qr_code_theme">QR Code Style</string>
+    <string name="fancy_qr_code_theme_name_yellow">Yellow</string>
+    <string name="fancy_qr_code_theme_name_green">Green</string>
+    <string name="fancy_qr_code_theme_name_red">Red</string>
+    <string name="fancy_qr_code_theme_name_blue">Blue</string>
+    <string name="fancy_qr_code_theme_name_purple">Purple</string>
+    <string name="fancy_qr_code_theme_name_black">Black</string>
+
+    <!-- edit password -->
+    <string name="edit_password_title">Change Password</string>
+    <string name="edit_password_old_password">Old Password</string>
+    <string name="edit_password_new_password">New Password</string>
+    <string name="edit_password_confirm_new_password">Confirm New Password</string>
+    <string name="edit_password_success">Change password success.</string>
+    <string name="edit_password_fail">Change password failed.</string>
+    <string name="edit_password_new_old_same">New password is same to the old.</string>
+    <string name="edit_password_editing">Changing password…\nDo Not turn off the screen.</string>
+
+    <!-- password keyboard -->
+    <string name="password_keyboard_done">Done</string>
+    <string name="password_keyboard_next">Next</string>
+
+    <!-- advance -->
+    <string name="activity_name_advance">Advanced Options</string>
+
+    <!-- first run dialog -->
+    <string name="first_run_dialog_title">To protect your bitcoin:</string>
+    <string name="first_run_dialog_line_1">NEVER UNINSTALL Bither.</string>
+    <string name="first_run_dialog_line_2">NEVER CLEAR Bither\'s data.</string>
+    <string name="first_run_dialog_line_3">NEVER FORGET your password.</string>
+
+    <!-- upgrade -->
+    <string name="begin_upgrade">Upgrading...\n1.Do not exit Bither.\n2.Do not turn off the phone.\n3.Do not turn off the screen.</string>
+    <string name="upgrading">Upgrading...</string>
+
+    <!-- xrandom -->
+    <string name="xrandom_stopping">Stopping…</string>
+    <string name="xrandom_cancel_confirm">Stop generating?</string>
+    <string name="xrandom_no_source">No entropy source available.</string>
+    <string name="xrandom_generating_failed">Generating failed</string>
+    <string name="urandom_not_exists">Your device can\'t provide enough secured randomness.</string>
+    <string name="xrandom_uncheck_warn">XRandom increases randomness.\nSure to disable?</string>
+    <string name="xrandom_final_confirm">You have generated %d private keys from XRandom.</string>
+    <string name="generating_private_key_final_confirm">You have generated %d private keys.</string>
+    <string name="xrandom_info_detail">XRandom gathers data from sources to improve randomness.\n\nThe sources are sensors on your device like camera, microphone, magnetic sensor, gravity sensor, etc.</string>
+    <string name="xrandom_info_guide">\n\nShaking or rotating your device and make some noise while gathering can improve randomness.</string>
+    <string name="xrandom_instruction_auto_show_check">Don\'t show next time</string>
+
+    <!-- qrcode-->
+    <string name="switch_qrcode">Switch QRCode</string>
+    <string name="use_old_version_qrcode">Switched to old version QR Codes, sign with Bither Cold &lt;1.1.0</string>
+    <string name="use_new_version_qrcode">Switched to new version QR Codes, sign with Bither Cold ≧1.1.0</string>
+
+    <!-- rcheck -->
+    <string name="rcheck_address_title">r-values of %s</string>
+    <string name="rcheck_address_danger_title">%s\'s r-value in danger</string>
+    <string name="rcheck_no_address">You have no address to check r-value.</string>
+    <string name="rcheck_safe">r-value safe.</string>
+    <string name="rcheck_danger">r-value in danger.</string>
+    <string name="rchecking">Checking r-values</string>
+    <string name="rcheck_button">RCheck</string>
+    <string name="rcheck_recalculate">RCheck failed. Resign Tx.</string>
+    <string name="rchecking_new_tx">RCheck</string>
+    <string name="rcheck_new_tx_success">RCheck</string>
+    <string name="rcheck_fail_recalculate_confirm">RCheck failed. Resign Tx?</string>
+    <string name="rcheck_info">Duplicated r values in an address\' transaction history might result in exposing the private key.\n\nRCheck will check all the r values in history to make sure no duplicated found.</string>
+    <string name="setting_name_rcheck">Check r-value</string>
+
+    <!-- trash -->
+    <string name="trash_private_key">Move to Trash Can</string>
+    <string name="trash_with_money_warn">This address still has some bitcoin.\nYou can\'t move it to trash can.</string>
+    <string name="trashing_private_key">Moving</string>
+    <string name="trash_can">Trash Can</string>
+    <string name="trash_can_empty">No address in trash can</string>
+    <string name="trash_address_restore">Restore Address?</string>
+
+    <!-- pin code -->
+    <string name="pin_code_enter_notice">Enter your PIN code</string>
+    <string name="pin_code_setting_name">PIN Code</string>
+    <string name="pin_code_setting_open">Enable PIN Code</string>
+    <string name="pin_code_setting_close">Disable PIN Code</string>
+    <string name="pin_code_setting_change">Change PIN Code</string>
+    <string name="pin_code_setting_open_msg">Enter your PIN code</string>
+    <string name="pin_code_setting_open_repeat_msg">Enter your PIN code again</string>
+    <string name="pin_code_setting_open_repeat_wrong">PIN codes are not same</string>
+    <string name="pin_code_setting_change_old_msg">Enter your old PIN code</string>
+    <string name="pin_code_setting_change_old_wrong">Old PIN code is wrong</string>
+    <string name="pin_code_setting_change_new_msg">Enter your new PIN code</string>
+    <string name="pin_code_setting_change_new_repeat_msg">Enter your new PIN code again</string>
+    <string name="pin_code_setting_change_repeat_wrong">New PIN codes are not same</string>
+    <string name="pin_code_setting_close_wrong">PIN code is wrong</string>
+
+    <!-- launch sequence -->
+    <string name="launch_sequence_switch_to_cold">Switch to Bither Cold</string>
+    <string name="launch_sequence_switch_to_cold_warn">Set this phone as Bither Cold?\n\nBither Cold need to be run on a offline phone.\nYou can monitor Bither Cold by Bither Hot.\nOnce set you can\'t switch back.</string>
+
+    <!-- bitcoin unit -->
+    <string name="setting_name_bitcoin_unit">Default Unit</string>
+
+    <!--  Private Key Management -->
+    <string name="private_key_management">Private Key Management</string>
+
+    <!-- Raw Private Key -->
+    <string name="activity_name_raw_private_key">Raw Private Key</string>
+    <string name="raw_private_key_private_key">Private Key</string>
+    <string name="raw_private_key_address">Address</string>
+    <string name="raw_private_key_add">Add This Private Key</string>
+    <string name="raw_private_key_not_safe">This private key is not safe</string>
+    <string name="raw_private_key_tab_binary">Binary</string>
+    <string name="raw_private_key_tab_dice">Dice</string>
+
+    <!-- QR Code Quality -->
+    <string name="qr_code_quality_setting_name">QR Code Precision</string>
+    <string name="qr_code_quality_setting_normal">Normal</string>
+    <string name="qr_code_quality_setting_low">Low</string>
+
+    <!-- Manual Delete Transaction -->
+    <string name="manual_delete_transaction_warning">Delete this transaction?</string>
+
+    <!-- Select Change Address -->
+    <string name="select_change_address_option_name">Select Change Address</string>
+    <string name="select_change_address_label">Select Change Address</string>
+    <string name="send_confirm_change_to_label">Change to:</string>
+    <string name="sign_transaction_change_to_label">Change to:</string>
+    <string name="sign_transaction_change_amount_label">Change Amount:</string>
+    <string name="select_change_address_change_to_same_warn">Pay to address &amp; change address can\'t be same</string>
+
+    <!-- Sign Message -->
+    <string name="sign_message_activity_name">Sign Message</string>
+    <string name="sign_message_button">Sign</string>
+    <string name="sign_message_output_copy">Copy</string>
+    <string name="sign_message_output_qr">Show QR Code</string>
+    <string name="sign_message_output_copied">Content Copied</string>
+    <string name="sign_message_input_hint">Message to sign</string>
+    <string name="sign_message_select_address">Select address to sign message</string>
+    <string name="sing_message_select_hd_receive">HD Account Receiving Address</string>
+    <string name="sing_message_select_hd_change">HD Account Changing Address</string>
+    <string name="sign_message_select_address_index">Index:</string>
+
+    <!-- Verify Message Signature -->
+    <string name="verify_message_signature_activity_name">Verify Message Signature</string>
+    <string name="verify_message_signature_address_hint">Signing Address</string>
+    <string name="verify_message_signature_message_hint">Original Message</string>
+    <string name="verify_message_signature_signature_hint">Signature</string>
+    <string name="verify_message_signature_verify_button">Verify</string>
+    <string name="verify_message_signature_verify_button_verifying">Verifying…</string>
+    <string name="verify_message_signature_verify_button_reverify">Reverify</string>
+    <string name="verify_message_signature_verify_success">Signature is correct</string>
+    <string name="verify_message_signature_verify_failed">Signature is not correct</string>
+    <string name="sign_message_setting_name">Message Signing</string>
+
+    <!-- hdm cold add -->
+    <string name="add_address_tab_hdm" translatable="false">HDM</string>
+    <string name="hdm_cold_seed_count_limit">You can only have 1 HDM account</string>
+    <string name="hdm_account_cold_address_list_label">HDM Cold</string>
+    <string name="hdm_seed_generation_notice">HDM is the hybrid of Hierarchical Deterministic &amp; Multisig technics.\n\nHDM uses Multisig to avoid HD wallet\'s vulnerability.\n\nBither uses 2 of 3 Multisig for HDM.\n\nThe 3 keys are generated from 3 HD seeds by Bither Hot, Bither Cold &amp; HDM server.</string>
+    <string name="hdm_keychain_xrandom_final_confirm">You have generated 1 HDM account from XRandom.</string>
+    <string name="hdm_cold_pub_key_qr_code_name">HDM Cold Account QR Code</string>
+    <string name="hdm_server_qr_code_name">HDM Server QR Code</string>
+    <string name="hdm_cold_seed_qr_code">HDM Cold Seed QR Code</string>
+    <string name="hdm_hot_seed_qr_code">HDM Hot Seed QR Code</string>
+    <string name="hdm_cold_seed_word_list">HDM Cold Phrase</string>
+    <string name="hdm_hot_seed_word_list">HDM Hot Phrase</string>
+
+    <!-- hdm check -->
+    <string name="hdm_keychain_check_title_cold">HDM Cold</string>
+    <string name="hdm_keychain_check_title_hot">HDM Hot</string>
+
+    <!-- hdm hot add -->
+    <string name="hdm_keychain_add_hot">HDM Hot</string>
+    <string name="hdm_keychain_add_cold">HDM Cold</string>
+    <string name="hdm_keychain_add_server">HDM Server</string>
+    <string name="hdm_keychain_add_hot_confirm">Generate HDM Hot account</string>
+    <string name="hdm_keychain_add_scan_cold">Scan HDM Cold Account QR Code</string>
+    <string name="hdm_keychain_add_unsigned_server_qr_code_title">Choose HDM Server QR Code on Bither Cold</string>
+    <string name="hdm_keychain_add_scan_signed_server_qr_code_action">Scan Signed Server QR Code</string>
+    <string name="hdm_keychain_add_signed_server_qr_code_title">Signed Server QR Code</string>
+    <string name="hdm_keychain_add_sign_server_qr_code_error">Signing server QR code is wrong</string>
+    <string name="hdm_exception_bid_already_exists">HDM Cold account is already bound to another Hot account</string>
+    <string name="hdm_keychain_add_unsigned_server_qr_code_dismiss_confirm">Give up signing?</string>
+
+    <!-- show hdm address -->
+    <string name="address_group_hdm_hot">HDM Hot</string>
+    <string name="hdm_address_trash_at_least_one_warn">You can\'t trash all the addresses in an HDM account</string>
+    <string name="hdm_address_sign_tx_server_error">HDM server signing went wrong</string>
+
+    <!-- hdm hot address add -->
+    <string name="hdm_address_count_limit">Reached HDM address count limit</string>
+    <string name="activity_name_add_hdm_address">Add HDM Address</string>
+    <string name="hdm_address_add_count_label">How many HDM addresses to add?</string>
+    <string name="hdm_address_add_need_cold_pub">Need HDM Cold account QR code to continue.</string>
+    <string name="hdm_address_add_button">Add</string>
+    <string name="hdm_address_add_cold_pub_not_match">HDM Cold account is not same as before</string>
+
+    <!-- hdm send -->
+    <string name="hdm_send_with_cold">Sign with HDM Cold</string>
+    <string name="hdm_send_with_server">Sign with HDM Server</string>
+    <string name="hdm_send_with_cold_no_requested_seed">You don\'t have the requested HDM Cold account</string>
+
+    <!-- hdm recovery -->
+    <string name="hdm_keychain_recovery_setting_name">HDM Account Recovery</string>
+    <string name="hdm_keychain_recovery_warn">HDM Account is in recovery</string>
+    <string name="hdm_keychain_recovery_no_addresses">No HDM address to recover</string>
+    <string name="hdm_keychain_recovery_message">Send bitcoins from HDM recovery account to other addresses ASAP</string>
+    <string name="address_group_hdm_recovery">HDM Recovery</string>
+    <string name="activity_name_hdm_import_word_list">Import HDM Phrase</string>
+    <string name="hdm_import_word_list_input_hint">Next Word</string>
+    <string name="hdm_import_word_list_empty_message">Enter HDM Phrase</string>
+    <string name="hdm_import_word_list_wrong_word_warn">Invalid word</string>
+    <string name="hdm_import_word_list_delete">Delete</string>
+    <string name="hdm_import_word_list_replace">Replace</string>
+    <string name="activity_name_hd_import_word_list">Import HDM Phrase</string>
+    <string name="hd_import_word_list_empty_message">Enter HDM Phrase</string>
+
+    <!-- hdm reset server password -->
+    <string name="hdm_reset_server_password_password_wrong_confirm">HDM Server authentication failed.\nUse HDM Cold to reauthorize?</string>
+    <string name="hdm_reset_server_password_confirm">Reset HDM Server authentication?</string>
+    <string name="hdm_reset_server_password_setting_name">Reset HDM Server Authentication</string>
+    <string name="hdm_reset_server_password_success">HDM Server Authentication is reset.</string>
+
+    <!-- hdm singular mode -->
+    <string name="hdm_singular_check_title">Singular Mode</string>
+    <string name="hdm_singular_cold_seed_remember_warn">HDM Cold seed is very important.\nYou must save it by yourself.</string>
+    <string name="hdm_singular_cold_seed_remember_button">I have saved my HDM Cold seed.</string>
+    <string name="hdm_singular_cold_seed_tab_words">Seed Phrase</string>
+    <string name="hdm_singular_cold_seed_tab_qr">QR Code</string>
+    <string name="hdm_singular_mode_info">Singular Mode runs on one device.\nDo not need Bither Cold.\nBut you need to keep Cold seed safely.\nCold seed is the only way to recover.</string>
+    <string name="hdm_singular_mode_cancel_warn">HDM singular mode can not be interrupted.</string>
+
+    <!-- address alias -->
+    <string name="address_alias_manage">Address Tag</string>
+    <string name="address_alias_add">Set Address Tag</string>
+    <string name="address_alias_remove">Remove Address Tag</string>
+    <string name="address_alias_edit">Edit Address Tag</string>
+    <string name="address_alias_input_label">Enter tag for this address</string>
+    <string name="address_alias_input_hint">Tag</string>
+    <string name="address_alias_remove_confirm">Remove tag for this address?</string>
+
+    <!-- bither team address -->
+    <string name="donate_address">1BitherUnNvB2NsfxMnbS35kS3DTPr7PW5</string>
+    <string name="bither_team_address">Developer\'s Address</string>
+    <string name="bither_team_address_copied">Developer\'s address Copied</string>
+
+    <!-- password strength -->
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_normal">Normal</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+    <string name="password_strength_warning">Sure to use %s strength password?</string>
+    <string name="password_strength_check">Password Strength Check</string>
+    <string name="password_strength_check_on">On</string>
+    <string name="password_strength_check_off">Off</string>
+    <string name="password_strength_check_off_warn">Sure to turn off password strength check?</string>
+
+    <!-- add hd account -->
+    <string name="add_hd_account_label">Generate New HD Account</string>
+    <string name="add_hd_account_button">Generate</string>
+    <string name="add_hd_account_tab_hd">HD Account</string>
+    <string name="add_hd_account_tab_other">Others</string>
+    <string name="add_hd_account_other_hdm">Generate HDM Account</string>
+    <string name="add_hd_account_other_private">Generate Normal Private Keys</string>
+    <string name="add_hd_account_monitor">Monitor Bither Cold</string>
+    <string name="add_hd_account_view_label">You already have an HD account.</string>
+    <string name="add_hd_account_seed_qr_code">HD Account Seed QR Code</string>
+    <string name="add_hd_account_seed_qr_phrase">HD Account Seed Phrase</string>
+    <string name="add_hd_account_show_seed_label">HD seed can be used to recover HD account.\nPlease keep it somewhere safe.</string>
+    <string name="add_hd_account_show_seed_button">I have kept it safely.</string>
+
+    <!-- show hd account -->
+    <string name="address_group_hd">HD Account</string>
+    <string name="hd_account_request_new_receiving_address">Request New Address</string>
+    <string name="hd_account_request_new_receiving_address_failed">Unused new address count is limited to 20.</string>
+
+    <!-- vanity address length -->
+    <string name="vanity_address_length">Vanity Address Length</string>
+    <string name="vanity_address_none">None</string>
+
+    <!-- Enterprise HDM -->
+    <string name="enterprise_activate_warn">Activate Enterprise Account?</string>
+    <string name="enterprise_hdm_keychain_add">Add Enterprise HDM Account</string>
+    <string name="enterprise_hdm_seed_add">Add Enterprise HDM Seed</string>
+    <string name="enterprise_hdm_seed_add_fail">Add enterprise HDM seed failed</string>
+    <string name="enterprise_hdm_seed">Enterprise HDM Seed</string>
+    <string name="enterprise_hdm_seed_add_note">Add a Seed to Make an Enterprise HDM Account</string>
+    <string name="enterprise_hdm_seed_qr_code">Enterprise HDM Seed QR Code</string>
+    <string name="enterprise_hdm_seed_import_from_qr_code">Import from QR Code</string>
+    <string name="enterprise_hdm_seed_import_from_phrase">Import from Phrase</string>
+    <string name="enterprise_hdm_seed_cosign">Cosign</string>
+    <string name="enterprise_hdm_seed_backup_qr_code">Backup QR Code</string>
+    <string name="enterprise_hdm_seed_backup_qr_code_promote">Enterprise HDM Seed</string>
+    <string name="enterprise_hdm_seed_backup_phrase">Backup Phrase</string>
+    <string name="enterprise_hdm_seed_import_format_error">Not match enterprise HDM seed format</string>
+    <string name="enterprise_hdm_keychain">Enterprise HDM Account</string>
+    <string name="enterprise_hdm_keychain_multisig_scheme">Choose Multisig Scheme</string>
+    <string name="enterprise_hdm_keychain_collect_pubs">Collect Seed QR Codes</string>
+    <string name="enterprise_hdm_keychain_address_count">How many addresses to generate?</string>
+    <string name="enterprise_hdm_keychain_collect_pub_error">Add seed wrong</string>
+    <string name="enterprise_hdm_keychain_add_fail">Add Enterprise HDM Account Failed</string>
+    <string name="next_step">Next</string>
+    <string name="enterprise_hdm_keychain_payment_proposal">Payment Proposal</string>
+    <string name="enterprise_hdm_keychain_payment_proposal_signature_needed">Need %1$d/%2$d Signatures</string>
+    <string name="enterprise_hdm_keychain_payment_proposal_add_signaure">Add Signature</string>
+    <string name="enterprise_hdm_keychain_payment_proposal_sign_failed">Sign transaction failed</string>
+    <string name="enterprise_hdm_keychain_payment_proposal_sign_success">Sign transaction success</string>
+    <string name="enterprise_hdm_keychain_payment_proposal_signature_collected">Signatures Collected</string>
+    <string name="enterprise_hdm_keychain_enable_hint">Enter Enterprise Code</string>
+    <string name="enterprise_hdm_keychain_enable_failed">Invalid Enterprise Code</string>
+    <string name="enterprise_hdm_keychain_add_new_address">Add New Address</string>
+
+    <!-- Cold HD -->
+    <string name="add_cold_hd_account_tab">HD Account</string>
+    <string name="add_cold_hd_account_other_tab">Others</string>
+    <string name="add_cold_hd_account_label">Generate New Cold HD Account</string>
+    <string name="add_cold_hd_account_button">Generate</string>
+    <string name="add_cold_hd_account_other_hdm">Generate HDM Account</string>
+    <string name="add_cold_hd_account_other_private">Generate Normal Private Keys</string>
+    <string name="add_cold_hd_account_monitor_qr">HD Account Monitor QR Code</string>
+    <string name="add_cold_hd_account_xpub_b58">XPub</string>
+    <string name="hd_account_cold_address_list_label">Cold HD Account</string>
+    <string name="import_cold_hd_account_seed_qr_code">From HD Account Seed QR Code</string>
+    <string name="import_cold_hd_account_seed_phrase">From HD Account Phrase</string>
+
+    <!-- Monitor HD -->
+    <string name="monitor_cold_hd_account">Monitor Cold HD Account</string>
+    <string name="monitor_cold_hd_account_limit">You can only monitor 1 cold HD account</string>
+    <string name="monitor_cold_hd_account_failed">Monitor cold HD account failed</string>
+    <string name="monitor_cold_hd_account_failed_duplicated">Monitor failed. This account is already in Bither.</string>
+    <string name="monitor_cold_hd_account_success">Monitor cold HD account success</string>
+    <string name="address_group_hd_monitored">Cold HD Account</string>
+    <string name="hd_account_old_addresses">Old Addresses</string>
+    <string name="hd_account_old_addresses_zero">No address used yet</string>
+
+    <!-- Address Full For HD -->
+    <string name="address_full_for_hd_label_own">Own</string>
+    <string name="address_full_for_hd_label_foreign">Foreign</string>
+    <string name="address_full_for_hd_type_receiving">Receiving</string>
+    <string name="address_full_for_hd_type_sending">Sending</string>
+    <string name="address_full_for_hd_type_changing">Changing</string>
+
+    <!-- Hide Total Balance -->
+    <string name="total_balance_hide_setting_name">Total Balance</string>
+    <string name="total_balance_hide_show_all">Show All</string>
+    <string name="total_balance_hide_show_chart">Show Chart</string>
+    <string name="total_balance_hide_hide_all">Hide All</string>
+
+    <!-- Reload Data -->
+    <string name="web_reload_web_type">Reload Data from following web</string>
+    <string name="web_reload_bither_net">bither.net</string>
+    <string name="web_reload_block_chain">blockChain.info</string>
+    <string name="web_reload_chain_btc">chain.btc.com</string>
+
+    <string name="web_reload_data_title">Reload Data</string>
+    <string name="web_reload_data_message">Data Source</string>
+    <string name="web_reload_data_confirm">confirm</string>
+    <string name="web_reload_data_cancel">cancel</string>
+
+    <!-- Normal Private Keys Back Up Notice -->
+    <string name="normal_private_key_back_up_notice">Normal private keys are not within HD Account.\nThey need separated back ups.</string>
+
+    <!-- HD Account XPub -->
+    <string name="hd_account_cold_first_address">Show First Address</string>
+    <string name="hd_account_monitor_xpub_need_to_upgrade">You need to upgrade Bither cold to v1.6.0</string>
+    <string name="hd_account_show_xpub">Show XPub</string>
+    <string name="hd_account_monitor_check_first_address">Check First Address</string>
+    <string name="monitor_addresses_validation">Check Monitored Addresses</string>
+    <string name="title_activity_ad">AdActivity</string>
+
+    <!-- Ad -->
+    <string name="ad_go">Go</string>
+    <string name="ad_image_name">img_en</string>
+    <string name="ad_skip">Skip</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="setting_privacy_policy">Privacy Policy</string>
+
+    <!--Split Coin-->
+    <string name="get_fork_coins_title">Get Fork Coins</string>
+    <string name="get_split_coin_setting_name">Get %s</string>
+    <string name="get_split_coin">Getable: </string>
+    <string name="not_bitpie_split_coin_address">Only sent to Bitpie %s address</string>
+    <string name="you_already_get_split_coin">You already gat %s</string>
+    <string name="bitpie_split_coin_address">Bitpie %s address</string>
+    <string name="obtain_BCC_receive_address">Receive Address</string>
+    <string name="obtain_BCC_btn_obtain">Get</string>
+    <string name="no_private_key">Please firstly import Private Key</string>
+    <string name="get_success">get success</string>
+    <string name="please_firstly_sync_to_block_no">Please firstly sync to block no %d</string>
+    <string name="no_sync_complete">Please wait. The transaction has been not synced well！</string>
+    <string name="get_bcd_block_hash_error">Failed to get BCD block height hash!</string>
+
+    <string name="private_key_import">Import</string>
+    <string name="private_key_import_title">Please select the address corresponding to the import private key</string>
+    <string name="private_key_compressed_address">Compress private key address</string>
+    <string name="private_key_uncompressed_address">Uncompressed private key address</string>
+    <string name="private_key_recommend">(Recommend)</string>
+
+</resources>

@@ -1,0 +1,35 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "android.bither.com.mybither",
+            minSdkVersion    : 14,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    dependencies = [
+            "support-v4"        : 'com.android.support:support-v4:21.0.3',
+            "gson"              : 'com.google.code.gson:gson:2.3.1',
+            "appcompat-v7"      : 'com.android.support:appcompat-v7:26.1.0',
+            "constraint-layout" : 'com.android.support.constraint:constraint-layout:1.0.2',
+            "design"            : 'com.android.support:design:26.1.0',
+            "protobuf"          : 'com.google.protobuf:protobuf-java:2.5.0',
+            "nineoldandroids"   : 'com.nineoldandroids:library:2.4.+',
+            "zxing"             : 'com.google.zxing:core:3.1.0@jar',
+            "multidex"          : 'com.android.support:multidex:1.0.1',
+            "slf4j"             : 'org.slf4j:slf4j-api:1.7.7',
+            "guava"             : 'com.google.guava:guava:13.0.1@jar',
+            "tony19-logback"    : 'com.github.tony19:logback-android-classic:1.0.10-2@jar',
+
+            "httpclient"        : 'org.apache.httpcomponents:httpclient:4.2.1@jar',
+            "httpmime"          : 'org.apache.httpcomponents:httpmime:4.1@jar',
+            "httpcore"          : 'org.apache.httpcomponents:httpcore:4.3.2@jar',
+            "apache-mime4j-core": 'org.apache.james:apache-mime4j-core:0.7.1@jar',
+
+            "json"              : 'org.json:json:20140107@jar',
+            "findbugs"          : 'com.google.code.findbugs:jsr305:2.0.1@jar',
+            "scrypt"            : 'com.lambdaworks:scrypt:1.4.0@jar',
+            "spongycastle"      : 'com.madgag.spongycastle:core:1.58.0.0'
+    ]
+}
