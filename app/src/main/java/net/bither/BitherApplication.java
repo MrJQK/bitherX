@@ -86,7 +86,7 @@ public class BitherApplication extends Application {
             return reloadTxTime + 60 * 60 * 1000 < System.currentTimeMillis();
         }
     }
-
+    //todo java.lang.SecurityException: MODE_WORLD_READABLE no longer supported
     public static File getLogDir() {
         final File logDir = mContext.getDir("log", Context.MODE_WORLD_READABLE);
         return logDir;
