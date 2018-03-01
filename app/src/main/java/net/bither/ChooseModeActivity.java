@@ -58,17 +58,11 @@ import net.bither.ui.base.dialog.DialogConfirmTask;
 import net.bither.ui.base.dialog.DialogUpgrade;
 import net.bither.util.AdUtil;
 import net.bither.util.BroadcastUtil;
-import net.bither.util.ImageFileUtil;
 import net.bither.util.LogUtil;
 import net.bither.util.SystemUtil;
 import net.bither.util.UIUtil;
 import net.bither.util.UpgradeUtil;
 import net.bither.xrandom.URandom;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
 
 public class ChooseModeActivity extends BaseActivity {
     private static final int AnimHideDuration = 600;
@@ -109,7 +103,7 @@ public class ChooseModeActivity extends BaseActivity {
                     startActivityForResult(intent, 1);
                 } else {
                     initActivity();
-                    downloadAd();
+                  //todo  downloadAd();
                 }
             }
         } else {
@@ -137,7 +131,7 @@ public class ChooseModeActivity extends BaseActivity {
     }
 
     private boolean isShowAd() {
-        JSONObject cacheAdJsonObject = AdUtil.getCacheAdJSON();
+   /*     JSONObject cacheAdJsonObject = AdUtil.getCacheAdJSON();
         if (cacheAdJsonObject != null) {
             File imageFile = ImageFileUtil.getAdImageFolder(getString(R.string.ad_image_name));
             if (imageFile.exists()) {
@@ -154,7 +148,7 @@ public class ChooseModeActivity extends BaseActivity {
                 }
             }
         }
-        return false;
+    */    return false;
     }
 
     private void downloadAd() {
