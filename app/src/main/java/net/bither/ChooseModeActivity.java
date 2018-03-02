@@ -230,16 +230,16 @@ public class ChooseModeActivity extends BaseActivity {
                 }
             } else if (appMode == BitherjSettings.AppMode.HOT) {
                 BitherApplication.getBitherApplication().startBlockchainService();
-
-                if (!AppSharedPreference.getInstance().getDownloadSpvFinish()) {
-                    initView();
-                    dowloadSpvBlock();
-                    configureWarmWait();
-                } else {
+// todo  直接进入
+//                if (!AppSharedPreference.getInstance().getDownloadSpvFinish()) {
+//                    initView();
+//                    dowloadSpvBlock();
+//                    configureWarmWait();
+//                } else {
                     gotoActivity(appMode);
                     finish();
-                    return;
-                }
+//                    return;
+//                }
             }
         }
     }
