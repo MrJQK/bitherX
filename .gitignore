@@ -1,5 +1,7 @@
 gradle/
 .idea
+gradlew
+gradlew.*
 
 .gradle
 /local.properties
