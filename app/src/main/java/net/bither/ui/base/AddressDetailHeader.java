@@ -239,7 +239,8 @@ public class AddressDetailHeader extends FrameLayout implements DialogFragmentFa
         @Override
         public void onClick(View v) {
             if (address != null) {
-                if (address.getBalance() <= 0) {
+                if (address.getBalance() < 0) {// todo 测试.
+//                if (address.getBalance() <= 0) {
                     DropdownMessage.showDropdownMessage(activity,
                             R.string.address_detail_send_balance_zero);
                     return;
