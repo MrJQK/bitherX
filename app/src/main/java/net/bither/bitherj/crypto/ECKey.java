@@ -659,7 +659,7 @@ public class ECKey implements Serializable {
         ECDSASignature sig = sign(hash, aesKey);
         // Now we have to work backwards to figure out the recId needed to recover the signature.
         int recId = -1;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++) { //根据签名、消息hash ，恢复pub-key
             ECKey k = ECKey.recoverFromSignature(i, sig, hash, isCompressed());
             if (k != null && Arrays.equals(k.pub, pub)) {
                 recId = i;
@@ -782,7 +782,7 @@ public class ECKey implements Serializable {
         } else {
             ECPoint R = decompressKey(x, (recId & 1) == 1);
             if (!R.multiply(n).isInfinity()) {
-                return null;
+                return null; // Infinity == ∞
             } else {
                 BigInteger e = new BigInteger(1, message);
                 BigInteger eInv = BigInteger.ZERO.subtract(e).mod(n);
