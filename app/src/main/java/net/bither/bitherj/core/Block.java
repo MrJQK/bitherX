@@ -462,7 +462,7 @@ public class Block extends Message {
         // as difficult as it wants to be .... if somebody was able to take control of our network
         // connection and fork us onto a different chain, they could send us valid blocks with
         // ridiculously easy difficulty and this function would accept them.
-        //
+ //       //  有效的blocks的hash值必须低于target。
         // To prevent this attack from being possible, elsewhere we check that the difficultyTarget
         // field is of the right value. This requires us to have the preceeding blocks.
         BigInteger target = getDifficultyTargetAsInteger();
